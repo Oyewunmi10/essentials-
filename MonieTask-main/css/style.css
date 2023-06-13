@@ -1,0 +1,269 @@
+:root {
+  --main-bg-color: #0c1d36;
+  --main-tx-color: #f9cc0b;
+  --white: #ffffff;
+}
+
+.sec-header {
+  height: 85vh;
+}
+
+.image-box {
+  position: relative;
+  width: 100%;
+}
+.image-box::after {
+  content: "";
+  border: 0.5rem solid var(--main-tx-color);
+  position: absolute;
+  top: 3rem;
+  left: 7rem;
+  padding: 15rem 25rem;
+  z-index: -1;
+}
+.hero-1 {
+  width: 40rem;
+  position: absolute;
+  top: 5rem;
+  left: 14rem;
+}
+.hero-2 {
+  width: 20rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 5rem;
+}
+.text-box {
+  padding: 10rem 8rem 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header-hero,
+.header-About {
+  color: var(--main-tx-color);
+  line-height: 1.5;
+}
+.header-hero {
+  font-size: 4rem;
+}
+.header-About {
+  font-size: 3.5rem;
+}
+.header-hero span {
+  background-color: var(--main-tx-color);
+  color: var(--main-bg-color);
+  padding: 0.5rem 1rem;
+  font-size: 3.5rem;
+  border-radius: 1.6rem;
+}
+.paragraph-hero {
+  font-size: 1.6rem;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.sec-how {
+  padding: 5rem;
+}
+
+.subHow-header {
+  text-align: center;
+  color: var(--main-tx-color);
+  margin-bottom: 2rem;
+}
+.container-how {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-tx-color);
+  align-items: center;
+  padding: 2rem;
+}
+.how-icon__box {
+  border: 0.2rem dotted var(--main-bg-color);
+  border-radius: 50%;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.how-icon__box > ion-icon {
+  color: var(--main-bg-color);
+}
+.how-header {
+  background-color: var(--main-bg-color);
+  color: var(--main-tx-color);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.how-text {
+  text-align: center;
+  color: var(--main-bg-color);
+}
+.sec-About {
+  padding: 5rem 0;
+}
+.image-box__About {
+  width: 100%;
+  padding-top: 6rem;
+}
+
+.image-box__About img {
+  width: 55rem;
+}
+.text-box__About {
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.list-About {
+  margin-bottom: 1rem;
+}
+.list-About li {
+  list-style: none;
+  color: var(--white);
+  display: flex;
+  gap: 0.5rem;
+}
+.list-About li > ion-icon {
+  color: var(--main-tx-color);
+}
+.paragraph-About {
+  font-size: 2rem;
+  background-color: var(--main-tx-color);
+  color: var(--main-bg-color);
+  width: 30rem;
+  padding: 1rem;
+  border-radius: 1.6rem;
+}
+.sec-payment {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: 80vh;
+}
+
+/* Slideshow container */
+.payment-container {
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.payment-mySlides {
+  display: grid;
+  gap: 3rem;
+  padding: 0 20rem;
+}
+.payment-mySlides p {
+  color: var(--white);
+}
+.slides-text {
+  color: var(--white);
+}
+
+.link a {
+  text-decoration: none;
+  color: var(--main-tx-color);
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -2.2rem;
+  padding: 1.6rem;
+  color: var(--main-tx-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.6s ease;
+  border-radius: 0 0.3rem 0.3rem 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: var(--main-tx-color);
+  color: white;
+}
+
+/* Caption text */
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 2px;
+  background-color: var(--main-tx-color);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: var(--white);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.sec-advertise {
+  height: 100vh;
+  padding: 5rem 20rem;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: var(--main-tx-color);
+  color: var(--main-bg-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1.8rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: var(--main-tx-color);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 1rem 5rem;
+  line-height: 1.5;
+  background-color: var(--main-bg-color);
+  color: var(--white);
+  overflow: hidden;
+}

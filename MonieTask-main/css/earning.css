@@ -1,0 +1,75 @@
+:root {
+  --main-bg-color: #0c1d36;
+  --main-tx-color: #f9cc0b;
+  --white: #ffffff;
+  --red: #ff0000;
+}
+.header-earning {
+  height: 70vh;
+}
+
+.earn-textbox {
+  width: 100%;
+  margin: 2rem;
+  line-height: 1.5;
+}
+.earn-textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 5rem 5rem 0 0;
+}
+.hero-2 {
+  width: 30rem;
+  bottom: 02.5rem;
+}
+
+.earning-headertext {
+  color: var(--main-tx-color);
+  font-size: 3rem;
+}
+.button-nonlink {
+  background-color: var(--main-tx-color);
+  color: var(--main-bg-color);
+  border: none;
+  font-size: 1.7rem;
+  padding: 1rem;
+  position: relative;
+}
+.button-nonlink::after {
+  content: "New and Hot";
+  background-color: var(--red);
+  font-size: 1rem;
+  color: var(--white);
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  padding: 0.3rem;
+}
+.button-nonlink:hover,
+.button-nonlink:active {
+  background-color: var(--white);
+}
+.button-color {
+  list-style: none;
+  margin-bottom: 1rem;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  color: var(--main-tx-color);
+}
+.button-color a:visited,
+.button-color a:link {
+  background-color: var(--main-bg-color);
+  color: var(--main-tx-color);
+  padding: 0.5rem 1rem;
+}
+.button-color a:hover,
+.button-color a:active {
+  background-color: var(--white);
+  color: var(--main-bg-color);
+}
+.social-logo {
+  width: 10rem;
+  filter: brightness(0.5) invert(100%) sepia(100%) saturate(10000%)
+    hue-rotate(180deg);
+}
